@@ -1,6 +1,5 @@
 export interface Entertainer {
   entertainerId: number;
-
   entStageName?: string;
   entSsn?: string;
   entStreetAddress?: string;
@@ -10,6 +9,7 @@ export interface Entertainer {
   entPhoneNumber?: string;
   entWebPage?: string;
   entEmailAddress?: string;
-
   dateEntered?: string;
+  bookingCount: number;
+  lastBookingDate?: string;
 }

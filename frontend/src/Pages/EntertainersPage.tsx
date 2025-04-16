@@ -1,28 +1,26 @@
 import { useEffect, useState } from 'react';
-import Pagination from '../Components/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { Entertainer } from '../types/Entertainer';
 import { fetchEntertainers } from '../api/EntertainersApi';
 import BarNav from '../Components/BarNav';
+import '../css/EntertainerPage.css';
 
 function EntertainersPage() {
-    const navigate = useNavigate();
-    const [entertainers, setEntertainers] = useState<Entertainer[]>([]);
-    const [pageSize, setPageSize] = useState<number>(10);
-    const [pageNum, setPageNum] = useState<number>(1);
-    const [totalPages, setTotalPages] = useState<number>(0);
-    const [error, setError] = useState<string | null>(null);
-    const [loading, setLoading] = useState(true);
-
+  const navigate = useNavigate();
+  const [entertainers, setEntertainers] = useState<Entertainer[]>([]);
+  const [pageSize, setPageSize] = useState<number>(10);
+  const [pageNum, setPageNum] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(0);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadEntertainers = async () => {
       try {
         setLoading(true);
         const data = await fetchEntertainers(pageSize, pageNum);
-        console.log('API Response:', data);
-        setEntertainers(data.entertainers);
-        setTotalPages(Math.ceil(data.totalNumEntertainers / pageSize));
+        setEntertainers(data);
+        setTotalPages(Math.ceil(data.length / pageSize));
       } catch (error) {
         setError((error as Error).message);
       } finally {
@@ -33,44 +31,63 @@ function EntertainersPage() {
   }, [pageSize, pageNum]);
 
   if (loading) return <p>Loading Entertainers...</p>;
-  if (error) return <p className="text-red-500">Error: {error}</p>;
-
-
-
+  if (error) return <p className="text-danger">Error: {error}</p>;
 
   return (
     <>
       <BarNav />
       <div>
-        <h1>Entertainers</h1>
-        <p>List of entertainers will be displayed here.</p>
+        <button
+          onClick={() => navigate('/entertainer/add')}
+          className="btn btn-success"
+        >
+          Add an Entertainer
+        </button>
       </div>
+      <div className="entertainers-page">
+        <div className="container mt-5">
+          <h1 className="text-center mb-4">Entertainers</h1>
+          <p className="text-center text-muted mb-5">
+            Explore our talented performers below.
+          </p>
 
-      {entertainers.map((e) => (
-        <div id="bookCard" className="card" key={e.entertainerId}>
-          <h3 className="card-title">{e.entStageName}</h3>
-          <div className="card-body">
-            <p>Total Bookings: </p>
-            <p>Most Recent Booking: </p>
-            <button
-              className="btn btn-primary"
-              onClick={() => navigate(`/entertainer/${e.entertainerId}`)}
-            />
+          <div className="row">
+            {entertainers.map((e) => (
+              <div
+                key={e.entertainerId}
+                className="col-md-4 mb-4"
+                onClick={() => navigate(`/entertainer/${e.entertainerId}`)}
+              >
+                <div className="card h-100 shadow-sm entertainer-card">
+                  <div className="card-body">
+                    <h5 className="card-title">{e.entStageName}</h5>
+                    <p>
+                      <strong>City:</strong> {e.entCity}
+                    </p>
+                    <p>
+                      <strong>Email:</strong> {e.entEmailAddress || 'N/A'}
+                    </p>
+                    <p>
+                      <strong>Total Bookings:</strong> {e.bookingCount}
+                    </p>
+                    <p>
+                      <strong>Last Booked:</strong>{' '}
+                      {e.lastBookingDate
+                        ? new Date(e.lastBookingDate).toLocaleDateString()
+                        : 'Never'}
+                    </p>
+                    <div className="text-muted small">
+                      Click to view details
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-      <Pagination
-        currentPage={pageNum}
-        totalPages={totalPages}
-        pageSize={pageSize}
-        onPageChange={setPageNum}
-        onPageSizeChange={(newSize) => {
-          setPageSize(newSize);
-          setPageNum(1);
-        }}
-      />
+      </div>
     </>
   );
 }
 
-export default EntertainersPage
+export default EntertainersPage;

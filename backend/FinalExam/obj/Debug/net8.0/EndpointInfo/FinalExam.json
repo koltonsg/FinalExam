@@ -12,11 +12,287 @@
         ],
         "responses": {
           "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntertainerDetailsDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntertainerDetailsDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntertainerDetailsDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Entertainer/{EntertainerId}": {
+      "get": {
+        "tags": [
+          "Entertainer"
+        ],
+        "parameters": [
+          {
+            "name": "EntertainerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entertainer"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entertainer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entertainer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Entertainer/AddEntertainer": {
+      "post": {
+        "tags": [
+          "Entertainer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Entertainer/DeleteEntertainer/{EntertainerId}": {
+      "delete": {
+        "tags": [
+          "Entertainer"
+        ],
+        "parameters": [
+          {
+            "name": "EntertainerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Entertainer/UpdateEntertainer/{entertainerId}": {
+      "put": {
+        "tags": [
+          "Entertainer"
+        ],
+        "parameters": [
+          {
+            "name": "entertainerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Entertainer"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
             "description": "OK"
           }
         }
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "Entertainer": {
+        "type": "object",
+        "properties": {
+          "entertainerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entStageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "entSsn": {
+            "type": "string",
+            "nullable": true
+          },
+          "entStreetAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "entCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "entState": {
+            "type": "string",
+            "nullable": true
+          },
+          "entZipCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "entPhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "entWebPage": {
+            "type": "string",
+            "nullable": true
+          },
+          "entEmailAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateEntered": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntertainerDetailsDto": {
+        "type": "object",
+        "properties": {
+          "entertainerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entStageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "entSsn": {
+            "type": "string",
+            "nullable": true
+          },
+          "entStreetAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "entCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "entState": {
+            "type": "string",
+            "nullable": true
+          },
+          "entZipCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "entPhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "entWebPage": {
+            "type": "string",
+            "nullable": true
+          },
+          "entEmailAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateEntered": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "bookingCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lastBookingDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

@@ -27,5 +27,5 @@ public partial class Entertainer
 
     public string? EntEmailAddress { get; set; }
 
-    public DateOnly? DateEntered { get; set; }
+    public DateTime? DateEntered { get; set; }
 }

@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\models\\engagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:models\\engagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\models\\entertainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:models\\entertainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\models\\entertainmentagencyexamplecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:models\\entertainmentagencyexamplecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\controllers\\entertainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:controllers\\entertainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\models\\engagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:models\\engagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\models\\entertainmentagencyexamplecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:models\\entertainmentagencyexamplecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|c:\\users\\kolto\\source\\repos\\final\\backend\\finalexam\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D428DC45-9C06-4AB3-BAA3-C7422CA83BDC}|FinalExam.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,53 +43,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T19:19:19.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Entertainer.cs",
               "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Models\\Entertainer.cs",
               "RelativeDocumentMoniker": "Models\\Entertainer.cs",
               "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Models\\Entertainer.cs",
               "RelativeToolTip": "Models\\Entertainer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T18:49:00.979Z",
+              "WhenOpened": "2025-04-16T19:52:08.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Engagement.cs",
               "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Models\\Engagement.cs",
               "RelativeDocumentMoniker": "Models\\Engagement.cs",
               "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Models\\Engagement.cs",
               "RelativeToolTip": "Models\\Engagement.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T18:48:51.663Z",
+              "WhenOpened": "2025-04-16T19:39:46.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T18:41:16.423Z",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T19:19:19.876Z",
               "EditorCaption": ""
             },
             {
@@ -111,13 +94,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EntertainerController.cs",
               "DocumentMoniker": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Controllers\\EntertainerController.cs",
               "RelativeDocumentMoniker": "Controllers\\EntertainerController.cs",
               "ToolTip": "C:\\Users\\kolto\\source\\repos\\Final\\backend\\FinalExam\\Controllers\\EntertainerController.cs",
               "RelativeToolTip": "Controllers\\EntertainerController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswE8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T18:26:09.624Z",
               "EditorCaption": ""
