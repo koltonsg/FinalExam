@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "FinalExam.Controllers.EntertainerController",
+    "Method": "GetAllEntertainers",
+    "RelativePath": "Entertainer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
